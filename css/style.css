@@ -1,0 +1,494 @@
+/* Main start */
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-color: #1a489e;
+	--secondary-color: antiquewhite;
+	--background-color: grey;
+	--hover: red;
+}
+
+html,
+body {
+	font-family: 'Times New Roman', Times, serif;
+	line-height: 1.4;
+	scroll-behavior: smooth;
+	background-color: var(--background-color);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-size: 1.6rem;
+	background: none;
+	border: none;
+	font-weight: 700;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+.container-sm {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+/* Winners Section */
+.section-header {
+	max-width: 750px;
+	padding-top: 150px;
+	margin: 10px auto;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+.section-header h1 {
+	font-size: 70px;
+	font-weight: 500;
+	color: var(--hover);
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+	padding-top: 100px;
+}
+.section-header p {
+	font-size: 40px;
+	color: var(--secondary-color);
+	padding-bottom: 80px;
+	margin-top: 3rem;
+}
+.section-header img {
+	height: auto;
+	width: 300px;
+	margin-top: 2rem;
+	border-radius: 15px;
+}
+
+.winners-text {
+	color: var(--secondary-color);
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.champions {
+	background: url('../images/green.jpg') no-repeat center center/cover;
+	margin-top: -10px;
+	padding-bottom: 50px;
+}
+
+/* Navbar */
+
+.navbar {
+	background: transparent;
+	color: var(--secondary-color);
+	padding: 1rem 2rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1000;
+	transition: background-color 0.4s ease-in-out;
+}
+
+.navbar.navbar-scroll {
+	background: var(--primary-color);
+	backdrop-filter: blur(10px);
+}
+
+.navbar-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .main-menu-list {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	font-weight: 600;
+}
+
+.navbar img {
+	width: 83px;
+	height: 68px;
+}
+
+.navbar a {
+	color: var(--secondary-color);
+	font-size: 1.6rem;
+}
+.navbar a:hover {
+	color: var(--hover);
+	cursor: pointer;
+}
+.navbar button:hover {
+	color: var(--hover);
+	cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+	display: none;
+}
+.navbar .mobile-menu-toggle {
+	color: var(--secondary-color);
+	cursor: pointer;
+}
+.navbar .mobile-menu-items {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0.95;
+	padding: 3rem 2rem;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	transform: translateX(100%);
+	transition: transform 0.3s ease;
+}
+
+.navbar .mobile-menu-items.active {
+	transform: translateX(0);
+}
+
+.navbar .mobile-menu-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	font-size: 1.2rem;
+}
+
+/* Hero */
+
+.hero {
+	background: url(../images/Fairhaven.JPG) no-repeat center center/cover;
+	padding: 12rem 4rem 10rem;
+	overflow-x: hidden;
+	position: relative;
+}
+.hero .hero-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	margin-bottom: 600px;
+	padding-bottom: 8rem;
+	gap: 80px;
+}
+
+.hero h1 {
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	color: var(--hover);
+	top: 15%;
+	text-shadow: 5px 1px black;
+}
+.hero img {
+	width: 18%;
+	border-radius: 25%;
+	box-shadow: 3px 2px 7px 1px #fff;
+	transform: scale(1.4);
+}
+.hero img:hover {
+	transform: scale(1.8);
+}
+
+/* Champions */
+.winners {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem;
+}
+.winners img {
+	transition: transform 0.3s ease-in-out;
+}
+.winners img:hover {
+	transform: scale(1.2);
+}
+
+.section {
+	margin: 4rem 0;
+}
+/* Commitee section */
+
+.commitee-profile {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	padding: 1rem 0 4rem;
+}
+.section-header h1 {
+	text-shadow: 5px 1px black;
+}
+.commitee-profile img {
+	margin-top: 1rem;
+	border-radius: 20px;
+	transition: transform 0.3s ease-in-out;
+}
+.commitee-profile img:hover {
+	transform: scale(1.2);
+}
+.profiles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2rem 2rem;
+	background: var(--primary-color);
+	box-shadow: 0 4px 12px 0;
+	border-radius: 15px;
+}
+.commitee-profile h2 {
+	font-size: 2rem;
+	padding-top: 30px;
+	color: var(--secondary-color);
+}
+.commitee-profile p {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+/* Blog Section */
+
+.blog-content {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	margin-top: -10px;
+	padding: 4rem;
+}
+
+.blog-content img {
+	width: 60%;
+	border-radius: 250px;
+}
+
+.blog-content h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	padding-left: 30px;
+	font-weight: 700;
+}
+.blog-content p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	line-height: 3rem;
+}
+
+.footer {
+	background: var(--background-color);
+	color: var(--primary-color);
+	border-top: 1px solid var(--hover);
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+.footer-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer a:hover {
+	color: var(--hover);
+	cursor: pointer;
+}
+.footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin: 2rem 0;
+}
+
+/* Past Champions */
+
+.boards {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background-color: goldenrod;
+	width: 100%;
+	height: 100vh;
+	border: 5px solid brown;
+
+	padding-top: 100px;
+}
+
+.boards h1 {
+	padding: 15px 25px;
+	margin-top: 20px;
+}
+
+.cell {
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	padding-left: 80px;
+}
+
+.dipper-champions-grid .cell {
+	padding-left: 120px;
+}
+
+.memorial-champions-grid .cell {
+	padding-left: 100px;
+}
+
+/* Media Queries */
+@media (max-width: 1600px) {
+	.boards {
+		height: auto;
+	}
+
+	.blog-content {
+		flex-direction: column;
+	}
+	.blog-content h1 {
+		padding: 20px;
+	}
+	.blog-content img {
+		padding-top: 50px;
+	}
+	.section-header h1 {
+		margin-top: -70px;
+	}
+	.boards {
+		padding-bottom: 400px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1200px) {
+	.hero img {
+		display: none;
+	}
+
+	.winners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.boards {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		align-items: center;
+	}
+	.blog-content {
+		flex-direction: column;
+	}
+	.blog-content h1 {
+		padding: 20px;
+	}
+}
+
+@media (max-width: 992px) {
+	.winners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.commitee-profile {
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: space-between;
+		gap: 40px;
+	}
+	.commitee-profile h1 {
+		padding-top: 150px;
+	}
+	.boards {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		align-items: center;
+	}
+	.blog-content {
+		flex-direction: column;
+		padding-top: 100px;
+	}
+	.blog-content h1 {
+		padding-bottom: 6px;
+	}
+	.blog-content p {
+		padding-top: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-menu-items {
+		display: none;
+	}
+	.navbar .mobile-menu {
+		display: block;
+	}
+	.navbar .mobile-menu-toggle {
+		display: block;
+		padding: 10px;
+	}
+	.winners {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.blog-content {
+		flex-direction: column;
+		margin: 0;
+	}
+	.footer-flex {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		justify-content: space-evenly;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero {
+		background: var(--primary-color);
+		margin-top: -1rem;
+		padding: 10rem 2rem 0;
+	}
+	.hero h1 {
+		font-size: 2.5rem;
+		padding-top: 19rem;
+	}
+	.champions h1 {
+		font-size: 4rem;
+	}
+	.winners {
+		grid-template-columns: (1, 1fr);
+	}
+	.boards {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		align-items: center;
+	}
+	.blog-content {
+		flex-direction: column;
+		margin-top: -10px;
+	}
+}
