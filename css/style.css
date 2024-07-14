@@ -362,6 +362,58 @@ button {
 	padding-left: 100px;
 }
 
+/* Newsletter */
+.newsletter {
+	text-align: center;
+	margin: 2rem 1.5rem;
+}
+
+.newsletter-flex {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 1.5rem;
+}
+.newsletter h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-shadow: 1px 0.5px white;
+}
+.newsletter p {
+	font-size: 1.5rem;
+	max-width: 600px;
+}
+.newsletter input[type='email'] {
+	padding: 1rem 2rem;
+	border: 2px solid var(--primary-color);
+	border-radius: 30px;
+	width: 100%;
+	max-width: 400px;
+	margin: 0.5rem 0;
+}
+
+.news-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+
+.news-btn button {
+	align-items: center;
+	background: var(--primary-color);
+	padding: 1.1rem 1.1rem;
+	border-radius: 20px;
+	font-size: 1.4rem;
+}
+.news-btn button:hover {
+	background: var(--secondary-color);
+	color: var(--hover);
+	cursor: pointer;
+}
+
 /* Media Queries */
 @media (max-width: 1600px) {
 	.boards {
