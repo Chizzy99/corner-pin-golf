@@ -364,17 +364,17 @@ button {
 }
 
 .tour-champions-grid .cell {
-	padding-left: 120px;
+	align-items: center;
 }
 .open-champions-grid .cell {
 	padding-left: 120;
 }
 .dipper-champions-grid .cell {
-	padding-left: 130px;
+	padding-left: 120px;
 }
 
 .memorial-champions-grid .cell {
-	padding-left: 120px;
+	padding-left: 110px;
 }
 
 /* Media Queries */
