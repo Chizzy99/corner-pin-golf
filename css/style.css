@@ -49,11 +49,11 @@ button {
 	margin: 0 auto;
 	padding: 0 2rem;
 }
-.container-sm {
+/* .container-sm {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 2rem;
-}
+} */
 
 /* Winners Section */
 .section-header {
@@ -85,7 +85,7 @@ button {
 }
 
 .winners-text {
-	color: var(--secondary-color);
+	color: #edf3ff;
 	font-weight: bold;
 	font-size: 18px;
 	padding-top: 10px;
@@ -108,7 +108,7 @@ button {
 	right: 0;
 	left: 0;
 	z-index: 1000;
-	transition: background-color 0.4s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
 }
 
 .navbar.navbar-scroll {
@@ -192,8 +192,8 @@ button {
 }
 
 .hero {
-	background: url(../images/Fairhaven.JPG) no-repeat center center/cover;
-	padding: 12rem 4rem 10rem;
+	background: url(../images/Fairhaven.JPG) no-repeat;
+	/* padding: 12rem 4rem 10rem; */
 
 	overflow-x: hidden;
 	position: relative;
@@ -203,7 +203,7 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
-	margin-bottom: 600px;
+	margin-bottom: 370px;
 	padding-bottom: 8rem;
 	gap: 80px;
 }
@@ -212,13 +212,15 @@ button {
 	font-size: 3.5rem;
 	font-weight: 700;
 	line-height: 1.2;
+	margin-top: 8rem;
 	margin-bottom: 1rem;
 	color: var(--hover);
 	top: 15%;
 	text-shadow: 5px 1px black;
 }
 .hero img {
-	width: 18%;
+	margin-top: 8rem;
+	width: 15%;
 	border-radius: 25%;
 	box-shadow: 3px 2px 7px 1px #fff;
 	transform: scale(1.4);
@@ -297,7 +299,7 @@ button {
 }
 
 .blog-content img {
-	width: 70%;
+	width: 50%;
 	border-radius: 150px;
 }
 
