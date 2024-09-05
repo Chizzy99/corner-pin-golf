@@ -84,13 +84,6 @@ button {
 	border-radius: 15px;
 }
 
-.winners-text {
-	color: #edf3ff;
-	font-weight: bold;
-	font-size: 18px;
-	padding-top: 10px;
-}
-
 .champions {
 	background: url('../images/green.jpg') no-repeat center center/cover;
 	margin-top: -10px;
@@ -193,8 +186,7 @@ button {
 
 .hero {
 	background: url(../images/Fairhaven.JPG) no-repeat;
-	/* padding: 12rem 4rem 10rem; */
-
+	margin-bottom: -50px;
 	overflow-x: hidden;
 	position: relative;
 }
@@ -220,13 +212,13 @@ button {
 }
 .hero img {
 	margin-top: 8rem;
-	width: 15%;
+	width: 20%;
 	border-radius: 25%;
 	box-shadow: 3px 2px 7px 1px #fff;
-	transform: scale(1.4);
+	transition: transform 0.3s ease-in-out;
 }
 .hero img:hover {
-	transform: scale(1.8);
+	transform: scale(1.4);
 }
 
 /* Champions */
@@ -234,6 +226,12 @@ button {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 4rem;
+}
+.winners-text {
+	color: #edf3ff;
+	font-weight: bold;
+	font-size: 18px;
+	padding-top: 10px;
 }
 .winners img {
 	transition: transform 0.3s ease-in-out;
@@ -429,6 +427,7 @@ button {
 	.winners {
 		grid-template-columns: repeat(1, 1fr);
 	}
+
 	.commitee-profile {
 		grid-template-columns: repeat(1, 1fr);
 		justify-content: space-between;

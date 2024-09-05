@@ -18,7 +18,7 @@ window.addEventListener('scroll', function () {
 		navbar.classList.remove('navbar-scroll');
 	}
 });
-
+// * Nav links scroll to
 document.querySelectorAll('.scroll-btn').forEach((button) => {
 	button.addEventListener('click', function (e) {
 		e.preventDefault();
