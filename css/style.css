@@ -378,6 +378,18 @@ button {
 }
 
 /* Media Queries */
+@media (max-width: 2500px) {
+	.hero {
+		background-size: cover;
+	}
+	.blog-content {
+		display: block;
+		padding-top: 80px;
+	}
+	.blog-content h1 {
+		padding-top: 30px;
+	}
+}
 @media (max-width: 1600px) {
 	.boards {
 		height: auto;
