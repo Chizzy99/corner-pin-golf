@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		mobileMenu.classList.toggle('active');
 	});
 });
-
 // * Change navbar background scroll
 window.addEventListener('scroll', function () {
 	const navbar = document.querySelector('.navbar');
