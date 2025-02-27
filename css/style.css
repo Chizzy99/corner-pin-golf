@@ -185,7 +185,7 @@ button {
 }
 
 .hero {
-	background: url(../images/Fairhaven.JPG) no-repeat;
+	background: url(../images/Fairhaven.JPG) no-repeat center center/cover;
 	margin-bottom: -50px;
 	overflow-x: hidden;
 	position: relative;
@@ -439,7 +439,8 @@ table td {
 }
 
 /* Media Queries */
-@media (max-width: 1600px) {
+
+@media (max-width: 5600px) {
 	.boards {
 		height: auto;
 	}
